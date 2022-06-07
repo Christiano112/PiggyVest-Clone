@@ -1,0 +1,32 @@
+@use 'custom' as *;
+
+
+
+.reset {
+    margin: 0;
+    padding: 0;
+    background: blue;
+    white-space: no-wrap;
+
+    .container {
+
+        .col {
+
+            .form {
+                border-top-left-radius: 1.3rem;
+                border-top-right-radius: 1.3rem;
+                border-bottom-right-radius: 1.3rem;
+
+                @include media-breakpoint-up(lg) {
+                    width: 50%;
+                }
+
+                input {
+                    border: none;
+                    border-radius: .2rem;
+                    background: #eee;
+                }
+            }
+        }
+    }
+}

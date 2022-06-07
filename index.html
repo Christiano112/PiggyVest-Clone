@@ -21,53 +21,91 @@
     <title>Invest in bits and on the go with Investify - PiggyVest</title>
   </head>
 
-  <body>
-    <nav class="nav">
-      <img src="./Images/logo.svg" alt="logo" />
-      <ul class="nav__links">
-        <li><a href="#">Save</a></li>
-        <li><a href="#">Invest</a></li>
-        <li><a href="#">Stories</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-
-      <a href="./login.html" target="_blank" class="nav__sign--btn">Sign in</a>
-      <a href="./register.html" target="_blank" class="nav__register--btn"
-        >Create Free account</a
-      >
-    </nav>
-
-    <header class="header">
-      <div class="header__text--container">
-        <h1>The Better Way to Save & Invest.</h1>
-        <p>
-          PiggyVest helps over 3 million customers achieve their financial goals
-          by helping them save and invest with ease.
-        </p>
-
-        <a href="./register.html" target="_blank" class="nav__register--btn"
-          >Create free account</a
-        >
-        <div>
-          <!-- apple icon and ply store icon needs to be added -->
-          <a href="">Get on iphone</a>
-          <a href="">Get on Android</a>
+  <body class="home">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-wrap">
+        <div class="container">
+          <a class="navbar-brand active" aria-current="page" href="#"><img src="Images/logo.svg" alt="logo"
+              class="img-fluid" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Save
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Piggybank</a></li>
+                  <li><a class="dropdown-item" href="#">Safelock</a></li>
+                  <li><a class="dropdown-item" href="#">Target Savings</a></li>
+                  <li><a class="dropdown-item" href="#">Flex Naira</a></li>
+                </ul>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#">Invest</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#">Stories</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQs</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Sign in</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Create free account</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <section class="header container">
+      <div class="row">
+        <div class="header__text col-md-6">
+          <h1>The Better Way to Save & Invest.</h1>
+          <p>
+            PiggyVest helps over 3 million customers achieve their financial goals
+            by helping them save and invest with ease.
+          </p>
+          <a href="./register.html" target="_blank" class="nav__register--btn">Create free account</a>
+          <div>
+            <!-- apple icon and ply store icon needs to be added -->
+            <a href="">Get on iphone</a>
+            <a href="">Get on Android</a>
+          </div>
+        </div>
+        
+        <div class="header__img col-md-6">
+          <!-- 2 svgs are missing -->
+          <img src="./Images/card1.png" alt="card1" />
+          <img src="./Images/headerImg.png" alt="header image" />
+          <img src="./Images/card2.png" alt="card2" />
         </div>
       </div>
-      <div class="header__img">
-        <!-- 2 svgs are missing -->
-        <img src="./Images/card1.png" alt="card1" />
-        <img src="./Images/headerImg.png" alt="header image" />
-        <img src="./Images/card2.png" alt="card2" />
-      </div>
-    </header>
+      
+    </section>
 
     <section class="security">
       <img
         src="./Images/security.png"
         alt="security Icon"
-        class="security__icon"
+        class="security__icon img-fluid"
       />
       <div class="security__text">
         <h1>Your security is our priority</h1>
