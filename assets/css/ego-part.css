@@ -1,0 +1,172 @@
+#footer-copyright {
+    color: rgb(2, 2, 164);
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.footer {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+#footer-container {
+    text-align: center;
+    padding: 0 18rem;
+}
+
+#footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 4.5rem 5rem;
+}
+
+#footer-nav h4 {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+#footer-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#company {
+    display: flex;
+    flex-direction: column;
+}
+
+#legal {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    text-align: right;
+}
+
+#products a, #company a, #legal a, #contact a {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+.featuredIn {
+    background-color: rgba(244, 244, 244, 0.444);
+    padding: 4rem 5rem;  
+}
+
+#featuredIn-div{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 7rem;
+    align-items: center;
+}
+
+.featuredIn h1{
+    font-size: 2.2rem;
+}
+
+#featuredIn-div img{
+    margin-right: 3rem;
+}
+
+.customers__info{
+    width: 25rem;
+    margin-left: 5rem;
+    padding-top: 3rem;
+}
+
+.customers__info a{
+    text-decoration: none;
+}
+
+#download-options a{
+    display: inline-block;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 500;
+    height: 3rem;
+    padding: 0.8rem 1rem 0 1rem;
+    margin-right: 0.1rem;
+    border: 1px solid rgb(210, 207, 207);
+    border-radius: 15px;
+    align-items: center;
+}
+
+#download-options a img{
+    margin-right: 0.2rem;
+}
+
+#customers__info-create-account{
+    display: inline-block;
+    color: white;
+    background-color: rgb(37, 36, 36);
+    padding: 1rem 1.5rem;
+    margin: 1rem 0 2.3rem 0;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.customers{
+    padding: 5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#divOfMovingMenu{
+    height: 440px;
+    width: 28rem;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    border: 10px solid hsla(0,0%,100%,.5);
+}
+
+#customers-testimonials-container{
+    font-size: 0.9rem;
+    overflow-y: hidden;
+    height: 400px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    box-shadow: inset 0 20px 0.7rem #f8f7f8; 
+}
+
+#customers-testimonials-container h4{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#customers-testimonials-container img{
+    width: 2.2rem;
+    border-radius: 50%;
+}
+
+.customers__testimonial{
+    background-color: rgba(244, 244, 244, 0.444);
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.customers__testimonial--date{
+    text-align: end;
+}
+
+.customers__testimonial--text{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    padding: 0;
+    margin: 0;
+}
