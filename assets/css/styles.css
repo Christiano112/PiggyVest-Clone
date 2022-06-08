@@ -10103,20 +10103,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.home {
-  background: red;
-}
-.home .container {
-  background: red;
-}
-.home .container .col-md-6 {
-  background: red;
-}
-.home .container .col-md-6 img {
-  width: 5rem;
-  height: 5rem;
-}
-
 .login {
   margin: 0;
   padding: 0;
