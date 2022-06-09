@@ -106,7 +106,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
-
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
@@ -10109,7 +10108,7 @@ textarea.form-control-lg {
   height: 3rem;
 }
 .home .container-fluid {
-  height: 25rem;
+  height: 30rem;
   border: 2px solid red;
 }
 .home .container-fluid .influencer__info {
@@ -10120,6 +10119,12 @@ textarea.form-control-lg {
 }
 .home .container-fluid p {
   text-align: justify;
+}
+.home .container-fluid .influencer__image {
+  height: 30rem;
+}
+.home .container-fluid .influencer__image img {
+  height: 100%;
 }
 
 .login {

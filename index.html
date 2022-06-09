@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="assets/css/home.css" />
-  <link rel="stylesheet" href="./assets/css/ego-part.css">
+  <link rel="stylesheet" href="assets\css\styles.css">
+  <link rel="stylesheet" href="ego-part.css">
+  <!-- <link rel="stylesheet" href="index.css"> -->
+  <link rel="shortcut icon" href="Images\piggyvest favicon.ico" type="image/x-icon">
   <title>Invest in bits and on the go with Investify - PiggyVest</title>
 </head>
 
@@ -96,9 +98,9 @@
   </section>
 
   <section class="container security">
-    <div class="row d-flex">
+    <div class="row">
       <div>
-        <img src="./Images/security.png" alt="security Icon" class="security__icon img-fluid" style="width: 8rem;" />
+        <img src="./Images/security.png" alt="security Icon" class="security__icon img-fluid" style="width: 10rem; height: auto;" />
       </div>
       <div class="security__text">
         <h1>Your security is our priority</h1>
@@ -125,7 +127,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="savings__type">
-              <img src="Images/piggybank.png" alt="automated" style="width: 8rem;" class="img-fluid" />
+              <img src="Images/piggybank.png" alt="automated" class="img-fluid" />
               <h2>Automated Savings</h2>
               <p>
                 Build a dedicated savings faster on your terms automatically or
@@ -143,7 +145,7 @@
             </div>
 
             <div class="savings__type">
-              <img src="./Images/safelock.png" alt="fixed" style="width: 8rem;" class="img-fluid" />
+              <img src="./Images/safelock.png" alt="fixed" class="img-fluid" />
               <h2>Fixed Savings</h2>
               <p>
                 Lock money away for a fixed duration with no access to it untill
@@ -162,7 +164,7 @@
           </div>
           <div class="col-md-6">
             <div class="savings__type">
-              <img src="./Images/target.png" style="width: 8rem;" alt="oriented" />
+              <img src="./Images/target.png" alt="oriented" />
               <h2>Goal-oriented Savings</h2>
               <p>
                 Reach all your savings goals faster. Save towards multiple goals on
@@ -180,7 +182,7 @@
             </div>
 
             <div class="savings__type">
-              <img src="./Images/flex.png" style="width: 8rem;" alt="flex" />
+              <img src="./Images/flex.png" alt="flex" />
               <h2>Flexible Savings</h2>
               <p>
                 Save, transfer, withdraw, manage and organise your money for free at
@@ -196,6 +198,7 @@
                 <p>Flex Naira</p>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -240,33 +243,35 @@
 
   </section>
 
-  <section class="container influencer">
-    <div class="row">
-      <div class="col-md-6 influencer__info">
+  <section class="container-fluid influencer d-flex flex-column flex-md-row my-5 px-0">
+      <div class="influencer__info text-white py-5">
         <!-- For Styling: Use combinators to style the children e.g .influencer__info h1 {} or .influencer__info a svg {} and so on. please delete this comment if you understand. -->
 
-        <h1>Meet the saver of the month!</h1>
-        <p>
-          Every month, we shine a spotlight on one saver, asking them questions
-          about their savings culture and how the product is specifically
-          helping them shape how they spend and save for future
-          responsibilities.
-        </p>
-        <a href="">
-          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="16.2173" cy="16.1587" r="16.0254" fill="white"></circle>
-            <path
-              d="M18.6211 10.5498L17.4913 11.6796L21.1611 15.3574L8.20461 15.3574L8.20461 16.96L21.1611 16.96L17.4833 20.6378L18.6211 21.7676L24.23 16.1587L18.6211 10.5498Z"
-              fill="#2295F2"></path>
-          </svg>
-          <p>Meet Debo (Mr Macaroni)</p>
-        </a>
+        <div class="mx-auto w-75">
+          <h1 class="fw-bolder">Meet the saver of the month!</h1>
+          <p class="">
+            Every month, we shine a spotlight on one saver, asking them questions
+            about their savings culture and how the product is specifically
+            helping them shape how they spend and save for future
+            responsibilities.
+          </p>
+          <div class="">
+            <a href="#" class="text-decoration-none text-white">
+              <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16.2173" cy="16.1587" r="16.0254" fill="white"></circle>
+                <path
+                  d="M18.6211 10.5498L17.4913 11.6796L21.1611 15.3574L8.20461 15.3574L8.20461 16.96L21.1611 16.96L17.4833 20.6378L18.6211 21.7676L24.23 16.1587L18.6211 10.5498Z"
+                  fill="#2295F2"></path>
+              </svg>
+              <span>Meet Debo (Mr Macaroni)</span>
+            </a>
+          </div>
+        </div>
       </div>
 
-      <div class="col-md-6">
-        <img src="Images/debo.png" alt="Debo" class="influencer__image" style="width: 20rem;" />
+      <div class="influencer__image">
+        <img src="Images/debo.png" alt="Debo" class="img-fluid" />
       </div>
-    </div>
   </section>
 
   <section class="customers">
@@ -489,7 +494,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
   <script src="./JS/script.js"></script>
 </body>
 

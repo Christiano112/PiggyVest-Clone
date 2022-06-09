@@ -16,11 +16,10 @@
     }
 
     .container-fluid {
-        height: 25rem;
+        height: 30rem;
         border: 2px solid red;
 
         .influencer__info {
-
             background: #0d60d8;
         }
 
@@ -30,6 +29,14 @@
 
         p {
             text-align: justify;
+        }
+
+        .influencer__image {
+            height: 30rem;
+
+            img {
+                height: 100%;
+            }
         }
     }
 }
