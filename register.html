@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/ego-part.css">
+    <link rel="icon" href="/Images/piggyvest favicon.ico">
     <title>PiggyVest | Dashboard</title>
 </head>
 
@@ -29,24 +30,26 @@
                         <img src="Images\White_piggyvest-logo.svg" alt="White_piggyvest-logo" class="img-fluid">
                     </div>
                     <div class="form bg-white mx-auto">
-                        <form action="#" class="d-flex flex-column justify-content-center p-5"
-                            onsubmit="return createAccount()">
-                            <h1 class="display-6 text-center text-primary text-nowrap">Create a Secure Account</h1>
-                            <p class="lead text-center fs-6 text-nowrap">Welcome to the future of Savings & Investments
+                        <form action="#" class="d-flex flex-column justify-content-center p-5"onsubmit="return createAccount()">
+                            <h1 class="text-center text-nowrap fs-4">Create a Secure Account</h1>
+                            <p class="lead text-center fs-6">Welcome to the future of Savings & Investments
                             </p>
 
                             <label for="fName" class="fs-6 fw-normal">Full Name</label>
-                            <input type="text" name="fName" id="fName" placeholder="Full Name" class="mb-3 p-2">
+                            <input type="text" name="fName" id="fName" placeholder="Full Name" class="mb-3 p-2"
+                                required>
 
                             <label for="email" class="fs-6 fw-normal">Email Address</label>
-                            <input type="email" name="email" id="email" placeholder="Email Address" class="mb-3 p-2">
+                            <input type="email" name="email" id="email" placeholder="Email Address" class="mb-3 p-2"
+                                required>
 
                             <label for="phone" class="fs-6 fw-normal">Phone Number</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Phone Number" class="mb-3 p-2">
+                            <input type="tel" name="phone" id="phone" placeholder="Phone Number" class="mb-3 p-2"
+                                required>
 
                             <label for="password" class="fs-6 fw-normal">Password</label>
-                            <input type="password" name="password" id="password" placeholder="Password"
-                                class="mb-3 p-2">
+                            <input type="password" name="password" id="password" placeholder="Password" class="mb-3 p-2"
+                                required>
 
                             <label for="referrer" class="fs-6 fw-normal">Referrer Phone or Promo Code (Optional)</label>
                             <input type="text" name="referrer" id="referrer" placeholder="Referrer Phone or Code"
@@ -67,11 +70,10 @@
                                 <option value="Other">Other</option>
                             </select>
 
-                            <input type="submit" value="Create Account" class="bg-primary my-3 p-2 text-white fs-4"
-                                id="submit-button">
+                            <input type="submit" value="Create Account" class="my-3 p-2 text-white fs-5" id="submit-button">
                         </form>
                     </div>
-                    <div class="reset text-center my-5">
+                    <div class="text-center my-5">
                         <p><a href="login.html" class="text-white text-decoration-none">Already have an account? Log
                                 In</a></p>
                     </div>

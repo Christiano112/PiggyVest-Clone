@@ -3,10 +3,15 @@
 
 
 .reset {
+    position: relative;
     margin: 0;
     padding: 0;
-    background: blue;
+    background: #062863;
+    background-size: 15%, 15%, 15%, 15%;
     white-space: no-wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    height: 100vh;
 
     .container {
 
@@ -21,12 +26,85 @@
                     width: 50%;
                 }
 
+                h1 {
+                    color: #083e9e;
+                }
+
+                p {
+                    color: #4a5568;
+                }
+
+                label {
+                    color: #4a5568;
+                }
+
                 input {
                     border: none;
                     border-radius: .2rem;
-                    background: #eee;
+                    background: #e2e8f0;
                 }
+
+                input[type=submit] {
+                    background: #0d60d8;
+                    border-top-left-radius: .7rem;
+                    border-top-right-radius: .7rem;
+                    border-bottom-right-radius: .7rem;
+                }
+
             }
+            
         }
     }
 }
+
+.corner_images {
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                    visibility: hidden;
+                }
+
+                .corner_circle {
+                    position: absolute;
+                    left: -1rem;
+                    top: -7rem;
+
+                    img {
+                        width: 14rem;
+                        height: 14rem;
+                        
+                    }
+                }
+
+                .corner_green {
+                    position: absolute;
+                    top: 0;
+                    right: -6rem;
+
+                    img {
+                        width: 14rem;
+                        height: 14rem;
+                    }
+                }
+
+                .corner_pink {
+                    position: absolute;
+                    bottom: -4rem;
+                    left: -5rem;
+
+                    img {
+                        width: 14rem;
+                        height: 14rem;
+                    }
+                }
+
+                .corner_purple {
+                    position: absolute;
+                    bottom: -2rem;
+                    right: -4rem;
+
+                    img {
+                        width: 14rem;
+                        height: 14rem;
+                    }
+                }
+            }
