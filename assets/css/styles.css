@@ -10103,8 +10103,22 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.home .container .influencer__info {
+.home .container .savings__type img {
+  width: 3rem;
+  height: 3rem;
+}
+.home .container-fluid {
+  height: 25rem;
+  border: 2px solid red;
+}
+.home .container-fluid .influencer__info {
   background: #0d60d8;
+}
+.home .container-fluid h1 {
+  font-size: 3rem;
+}
+.home .container-fluid p {
+  text-align: justify;
 }
 
 .login {
