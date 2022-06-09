@@ -7,12 +7,13 @@ function testimonialScroll() {
     if (scrollingCount < 10000000) {
         var customersTestimonialContainer = document.getElementById("customers-testimonials-container");
         customersTestimonialContainer.scrollTop = customersTestimonialContainer.scrollTop + 1;
-        if (customersTestimonialContainer.scrollTop == (400)) {
+        if (customersTestimonialContainer.scrollTop == (484)) {
             setTimeout(function () {
                 customersTestimonialContainer.scrollTop = 0;
                 scrollingCount++;
-            }, 2000);
+            }, 100);
         }
-        scrollTime = setTimeout('testimonialScroll()', 30);
+        scrollTime = setTimeout('testimonialScroll()', 35);
     }
 }
+

@@ -1,3 +1,8 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+
 #footer-copyright {
     color: rgb(2, 2, 164);
     margin-top: 1rem;
@@ -10,19 +15,28 @@
 }
 
 #footer-container {
+    margin: auto;
     text-align: center;
-    padding: 0 18rem;
+    width: 45rem;
 }
 
 #footer-nav {
     display: flex;
-    justify-content: space-between;
     padding: 4.5rem 5rem;
+}
+
+#mini-footer-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-logo {
+    margin-right: 5rem;
 }
 
 #footer-nav h4 {
     font-size: 0.9rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     font-weight: bold;
 }
 
@@ -34,7 +48,6 @@
 #products {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #company {
@@ -54,59 +67,70 @@
     text-align: right;
 }
 
-#products a, #company a, #legal a, #contact a {
+#products a,
+#company a,
+#legal a,
+#contact a {
     display: inline-block;
     margin-bottom: 0.8rem;
 }
 
 .featuredIn {
     background-color: rgba(244, 244, 244, 0.444);
-    padding: 4rem 5rem;  
+    padding: 4rem 5rem;
 }
 
-#featuredIn-div{
+#featuredIn-div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-right: 7rem;
     align-items: center;
 }
 
-.featuredIn h1{
+.featuredIn h1 {
     font-size: 2.2rem;
+    margin-left: 4rem;
+    font-weight: bold;
 }
 
-#featuredIn-div img{
+#featuredIn-div img {
     margin-right: 3rem;
+    width: 9rem;
 }
 
-.customers__info{
+#customers-info-div{
+    padding: 0;
+}
+
+.customers__info {
     width: 25rem;
     margin-left: 5rem;
     padding-top: 3rem;
 }
 
-.customers__info a{
+.customers__info a {
     text-decoration: none;
 }
 
-#download-options a{
+#download-options a {
     display: inline-block;
     color: black;
     font-size: 0.8rem;
     font-weight: 500;
     height: 3rem;
     padding: 0.8rem 1rem 0 1rem;
-    margin-right: 0.1rem;
+    margin-right: 0.3rem;
     border: 1px solid rgb(210, 207, 207);
     border-radius: 15px;
     align-items: center;
 }
 
-#download-options a img{
+#download-options a img {
     margin-right: 0.2rem;
 }
 
-#customers__info-create-account{
+#customers__info-create-account {
     display: inline-block;
     color: white;
     background-color: rgb(37, 36, 36);
@@ -117,56 +141,287 @@
     font-size: 1.1rem;
 }
 
-.customers{
-    padding: 5rem 4rem;
+.customers {
+    padding: 5rem 10rem;
     display: flex;
     justify-content: space-between;
 }
 
-#divOfMovingMenu{
+#divOfMovingMenu {
     height: 440px;
     width: 28rem;
     position: relative;
     display: inline-block;
     background-color: white;
-    border: 10px solid hsla(0,0%,100%,.5);
 }
 
-#customers-testimonials-container{
+#customers-testimonials-container {
     font-size: 0.9rem;
     overflow-y: hidden;
     height: 400px;
     overflow-x: hidden;
     box-sizing: border-box;
-    padding: 0.5rem 0;
     border-radius: 10px;
-    box-shadow: inset 0 20px 0.7rem #f8f7f8; 
 }
 
-#customers-testimonials-container h4{
+#start-fade {
+    position: absolute;
+    top: 0px;
+    display: block;
+    width: 100%;
+    height: 90px;
+    background-image: linear-gradient(to top,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 1) 100%);
+}
+
+#end-fade {
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 1) 100%);
+}
+
+#customers-testimonials-container h4 {
     font-size: 0.9rem;
     font-weight: bold;
 }
 
-#customers-testimonials-container img{
+#customers-testimonials-container img {
     width: 2.2rem;
     border-radius: 50%;
 }
 
-.customers__testimonial{
+.customers__testimonial {
     background-color: rgba(244, 244, 244, 0.444);
     padding: 1rem;
     width: 100%;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
 }
 
-.customers__testimonial--date{
+.customers__testimonial--date {
     text-align: end;
 }
 
-.customers__testimonial--text{
+.customers__testimonial--text {
     display: grid;
     grid-template-columns: 1fr 7fr;
     padding: 0;
     margin: 0;
+}
+
+/*Alert box in create form*/
+#alert-box {
+    border-left: 4px solid rgb(229, 8, 8);
+    position: fixed;
+    right: 0.2rem;
+    top: 2rem;
+    cursor: pointer;
+    display: flex;
+    display: none;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    animation-duration: 1s;
+    animation-name: slideIn;
+}
+
+@keyframes slideIn {
+    from{
+        top: 0;
+    }
+
+    to {
+        top: 2rem;
+    }
+}
+
+@keyframes slideOut {
+    from{
+        top: 2rem;
+    }
+    to{
+        top:0;
+    }
+}
+
+#alert-box i{
+    background-color: rgb(229, 8, 8);
+    border-radius: 50%;
+    padding: 8px 6px;
+    color: white;
+}
+
+#alert-box p{
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+    padding-left: 1rem;
+    
+}
+
+#alert-box button{
+    background-color: white;
+    margin-left: 2rem;
+    border: 1px solid rgb(210, 207, 207);
+}
+
+/*end of alert box styling*/
+
+
+@media (max-width: 1200px) {
+    .customers {
+        padding: 5rem 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .customers__info {
+        width: 25rem;
+        margin-left: 5rem;
+        padding-top: 3rem;
+    }
+
+    .customers .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #footer-container {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+
+    
+}
+
+
+
+@media (max-width: 1000px) {
+    #footer-container {
+        text-align: center;
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    #footer-nav {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0 0 2rem;
+    }
+
+    #mini-footer-nav {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #contact {
+        width: 100%;
+        padding-right: 2rem;
+        text-align: left;
+        grid-row: 3/4;
+        grid-column: 1/3;
+        margin-top: -4rem;
+    }
+
+    #footer-logo {
+        margin-bottom: 3rem;
+        width: 10rem;
+    }
+
+    #footer-container {
+        margin-top: -5rem;
+    }
+
+    .featuredIn {
+        background-color: rgba(244, 244, 244, 0.444);
+        padding: 4rem 0 2rem 0;
+    }
+
+    #featuredIn-div {
+        padding-right: 0;
+        align-items: center;
+    }
+
+    .featuredIn h1 {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+    }
+
+    #featuredIn-images {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 3.6rem 0 4.6rem;
+    }
+
+    #featuredIn-div img {
+        margin-bottom: 3rem;
+        width: 8rem;
+    }
+
+    .customers {
+        padding: 5rem 0;
+    }
+
+    .customers .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .customers__info {
+        width: 60%;
+        text-align: center;
+        margin: 0 auto 4rem auto;
+        padding-top: 3rem;
+    }
+
+    #divOfMovingMenu {
+        height: 440px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .customers__info{
+        width: 65%;
+    }
+
+    #divOfMovingMenu {
+        width: 100%;
+        margin:0;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .customers__info {
+        width: 90%;
+        padding: 0 1rem;
+    }
+    
+    .featuredIn h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #featuredIn-images {
+        margin: 0 4rem 0 4rem;
+    }
+    
+    #featuredIn-div img {
+        margin-right: 0;
+        width: 70%;
+    }
 }
