@@ -1,20 +1,14 @@
 @use 'custom' as *;
 
 
-
 .home {
-    background: red;
 
     .container {
-        background: red;
 
-        .col-md-6 {
-            background: red;
+        .influencer__info {
 
-            img {
-                width: 5rem;
-                height: 5rem;
-            }
+            background: #0d60d8;
         }
+
     }
 }
