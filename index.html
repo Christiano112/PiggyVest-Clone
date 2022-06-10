@@ -204,18 +204,18 @@
     </div>
   </section>
 
-  <section class="container investment">
-    <div class="row">
+  <section class="container">
+    <div class="row investment">
       <!-- For Styling: Use combinators to style the children e.g .investment__info h1 or  .investment__image svg:nth-of-child(1) {}and so on. please delete this comment if you understand. Apply to the remaining sections too -->
 
-      <div class="col-md-6 investment__image">
-        <svg class="circle investIcon" width="280" height="280" viewBox="0 0 300 300" fill="none"
+      <div class="investment__image col-lg-6">
+        <svg class="circle investIconC" width="280" height="280" viewBox="0 0 300 300" fill="none"
           xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px); opacity: 1">
           <circle cx="150" cy="150" r="150" fill="white"></circle>
           <circle cx="150" cy="150" r="100" stroke="#7913E5" stroke-opacity="0.07" stroke-width="100"></circle>
         </svg>
-        <img src="./Images/phone_invest.png" alt="" style="height: 30rem;" class="img-fluid" />
-        <svg class="dot investIcon" width="33" height="108" viewBox="0 0 35 110" fill="none"
+        <img src="./Images/phone_invest.png" alt="phone" class="img-fluid" />
+        <svg class="dot investIconD" width="33" height="108" viewBox="0 0 35 110" fill="none"
           xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px); opacity: 1">
           <circle cx="5" cy="5" r="5" fill="#7913E5" fill-opacity="0.21"></circle>
           <circle cx="5" cy="30" r="5" fill="#7913E5" fill-opacity="0.21"></circle>
@@ -230,32 +230,32 @@
         </svg>
       </div>
 
-      <div class="col-md-6 investment__info">
-        <p>Up To 25% Returns</p>
-        <h2>Access investment opportunities</h2>
-        <p>
+      <div class="investment__info col-lg-6 py-5 ps-1">
+        <span class="returns rounded-pill text-center fw-bold">Up To 25% Returns</span>
+        <h2 class="display-5">Access investment opportunities</h2>
+        <p class="invest__p py-3 text-wrap w-75">
           Invest securely and confidently on the go. Grow your money confidently
           by investing in pre-vetted investment opportunities.
         </p>
-        <a href="#">Learn more about Investments ></a>
+        <a href="#">Learn more about Investments  <span><i class="fa-solid fa-angle-right"></i></span></a>
       </div>
     </div>
 
   </section>
 
-  <section class="container-fluid influencer d-flex flex-column flex-md-row my-5 px-0">
+  <section class="container-fluid influencer d-flex flex-column flex-lg-row my-5 px-0">
       <div class="influencer__info text-white py-5">
         <!-- For Styling: Use combinators to style the children e.g .influencer__info h1 {} or .influencer__info a svg {} and so on. please delete this comment if you understand. -->
 
-        <div class="mx-auto w-75">
-          <h1 class="fw-bolder">Meet the saver of the month!</h1>
-          <p class="">
+        <div class="influencer__text mx-auto w-75">
+          <h1 class="fw-bolder fs-1">Meet the saver of the month!</h1>
+          <p class="pt-3">
             Every month, we shine a spotlight on one saver, asking them questions
             about their savings culture and how the product is specifically
             helping them shape how they spend and save for future
             responsibilities.
           </p>
-          <div class="">
+          <div class="py-5 py-sm-1">
             <a href="#" class="text-decoration-none text-white">
               <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="16.2173" cy="16.1587" r="16.0254" fill="white"></circle>

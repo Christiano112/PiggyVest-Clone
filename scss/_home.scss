@@ -13,18 +13,86 @@
             }
         }
 
+        .investment {
+            height: 100%;
+            margin: 10rem 0;
+
+            .investment__image {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .investIconC {
+                    z-index: -100;
+                    position: absolute;
+                    left: 0;
+
+                }
+
+                .investIconD {
+                    z-index: -10;
+                    position: absolute;
+                    right: 23%;
+                    top: 10%;
+                }
+
+                img {
+                    height: 30rem;
+                    max-width: 16rem;
+                    opacity: 1;
+                }
+            }
+
+            .investment__info {
+                display: flex;
+                font-family: 'Open Sans', sans-serif;
+                flex-flow: column wrap;
+                justify-content: center;
+
+                @include media-breakpoint-down(lg) {
+                    align-items: center;
+                    text-align: justify;
+                    text-align: center;
+                }
+
+                h2 {
+                    color: #0c1825;
+                    font-weight: 700;
+                }
+
+                .returns {
+                    color: #7913e5;
+                    background: #ece9f0;
+                    padding: 1rem 0;
+                    width: 10rem;
+                    margin-bottom: 3rem;
+                }
+
+                a {
+                    color: #7913e5;
+                    text-decoration: none;
+                }
+            }
+        }
+
     }
 
     .container-fluid {
-        height: 30rem;
-        border: 2px solid red;
+        height: 100%;
+        font-family: 'Open Sans', sans-serif;
 
         .influencer__info {
             background: #0d60d8;
+
         }
 
-        h1 {
-            font-size: 3rem;
+        .influencer__text {
+
+            @include media-breakpoint-down(sm) {
+                width: 50%;
+            }
+            
         }
 
         p {
@@ -32,11 +100,21 @@
         }
 
         .influencer__image {
-            height: 30rem;
 
             img {
                 height: 100%;
+                width: 100%;
             }
+        }
+    }
+}
+
+// Write media query for 360px for the height of blue
+@media (max-width: 420px) {
+    .container-fluid {
+
+        .influencer__info {
+            padding: 1rem 0;
         }
     }
 }

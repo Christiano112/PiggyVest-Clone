@@ -57,54 +57,62 @@
     }
 }
 
-.corner_images {
-                @include media-breakpoint-down(lg) {
-                    display: none;
-                    visibility: hidden;
-                }
 
-                .corner_circle {
-                    position: absolute;
-                    left: -1rem;
-                    top: -7rem;
 
-                    img {
-                        width: 14rem;
-                        height: 14rem;
+// .corner_images {
+
+//                 .corner_circle {
+//                     position: absolute;
+//                     left: -1rem;
+//                     top: -7rem;
+//                     display: none;
+
+//                     img {
+//                         width: 14rem;
+//                         height: 14rem;
                         
-                    }
-                }
+//                     }
+//                 }
 
-                .corner_green {
-                    position: absolute;
-                    top: 0;
-                    right: -6rem;
+//                 .corner_green {
+//                     position: absolute;
+//                     top: 0;
+//                     right: -6rem;
+//                     display: none;
 
-                    img {
-                        width: 14rem;
-                        height: 14rem;
-                    }
-                }
+//                     img {
+//                         width: 14rem;
+//                         height: 14rem;
+//                     }
+//                 }
 
-                .corner_pink {
-                    position: absolute;
-                    bottom: -4rem;
-                    left: -5rem;
+//                 .corner_pink {
+//                     position: absolute;
+//                     bottom: -4rem;
+//                     left: -5rem;
+//                     display: none;
 
-                    img {
-                        width: 14rem;
-                        height: 14rem;
-                    }
-                }
+//                     img {
+//                         width: 14rem;
+//                         height: 14rem;
+//                     }
+//                 }
 
-                .corner_purple {
-                    position: absolute;
-                    bottom: -2rem;
-                    right: -4rem;
+//                 .corner_purple {
+//                     position: absolute;
+//                     bottom: -2rem;
+//                     right: -4rem;
+//                     display: none;
 
-                    img {
-                        width: 14rem;
-                        height: 14rem;
-                    }
-                }
-            }
+//                     img {
+//                         width: 14rem;
+//                         height: 14rem;
+//                     }
+//                 }
+
+//                 @include media-breakpoint-up(lg) {
+//                     .corner_circle, .corner_green, .corner_pink, .corner_purple {
+//                         display: block;
+//                     }
+//                 }
+//             }
