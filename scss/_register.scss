@@ -1,32 +1,28 @@
-@use 'custom' as *;
-
-
+@use "custom" as *;
 
 .register {
-    margin: 0;
-    padding: 0;
-    background: blue;
-    white-space: no-wrap;
+  margin: 0;
+  padding: 0;
+  background: blue;
+  white-space: no-wrap;
 
-    .container {
+  .container {
+    .col {
+      .form {
+        border-top-left-radius: 1.3rem;
+        border-top-right-radius: 1.3rem;
+        border-bottom-right-radius: 1.3rem;
 
-        .col {
-
-            .form {
-                border-top-left-radius: 1.3rem;
-                border-top-right-radius: 1.3rem;
-                border-bottom-right-radius: 1.3rem;
-
-                @include media-breakpoint-up(lg) {
-                    width: 50%;
-                }
-
-                input {
-                    border: none;
-                    border-radius: .2rem;
-                    background: #eee;
-                }
-            }
+        @include media-breakpoint-up(lg) {
+          width: 50%;
         }
+
+        input {
+          border: none;
+          border-radius: 0.2rem;
+          background: #eee;
+        }
+      }
     }
+  }
 }
