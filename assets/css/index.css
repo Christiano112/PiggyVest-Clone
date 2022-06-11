@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
-body{
+header, .header{
     font-family: 'DM Sans', sans-serif;
     font-size: 16.5px;
     line-height: 27.2px;
@@ -12,12 +12,12 @@ body{
     top: 0;
     width: 100vw;
     height: 90px;
-    background-color: hsla(0, 0%, 100%, 0);
+    background-color: hsla(0, 0%, 100%);
     padding: 10px 10px;
     z-index: 1000;
 }
 
-.container{
+section.header{
     width: 80%;
     margin: 0 auto;
 }
@@ -34,7 +34,8 @@ body{
 }
 
 .signIn{
-    margin-left: 20%;
+    margin-left: 200px;
+    white-space: nowrap;
 }
 
 .signIn, .navCreateAcct{
@@ -45,7 +46,7 @@ section.header{
     margin-top: 300px;
 }
 
-.row{
+.row-head{
     margin: auto;
 }
 
@@ -75,7 +76,7 @@ section.header{
         width: 100%;
         padding: 0;
     }
-    .row{
+    .row-head{
         flex-direction: column;
         justify-items: center;
         padding: 0 auto;
@@ -143,7 +144,7 @@ section.header h1{
     transform: translateY(-10px)
 }
 
-.row{
+.row-head{
     min-height: 580.188px;
     align-items: center;
     padding: 0 15px;
