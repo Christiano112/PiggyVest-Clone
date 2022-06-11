@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets\css\styles.css" />
     <link rel="stylesheet" href="ego-part.css" />
     <link rel="stylesheet" href="security.css" />
+    <link rel="stylesheet" href="./assets/css/index.css">
     <!-- <link rel="stylesheet" href="index.css"> -->
     <link
       rel="shortcut icon"
@@ -31,8 +32,9 @@
 
   <body class="home">
     <header>
+      <div class="bg theme-dark"></div>
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-wrap"
+       id="navBar" class="navbar navbar-expand-lg navbar-light d-flex flex-wrap"
       >
         <div class="container">
           <a class="navbar-brand active" aria-current="page" href="#"
@@ -90,13 +92,13 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="login.html" target="_blank"
+                <a class="nav-link signIn" href="login.html" target="_blank"
                   >Sign in</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="register.html" target="_blank"
+                <a class="nav-link navCreateAcct text-white" href="register.html" target="_blank"
                   >Create free account</a
                 >
               </li>
@@ -106,33 +108,66 @@
       </nav>
     </header>
 
-    <section class="containerheader">
-      <div class="row">
+    <section class="container header">
+      <div class="row row-head">
         <div class="header__text col-md-6">
           <h1>The Better Way to Save & Invest.</h1>
           <p>
             PiggyVest helps over 3 million customers achieve their financial
             goals by helping them save and invest with ease.
           </p>
-          <a href="./register.html" target="_blank" class="nav__register--btn"
+          <a href="./register.html" target="_blank" class="nav__register--btn createAcct"
             >Create free account</a
           >
           <div>
             <!-- apple icon and ply store icon needs to be added -->
-            <a href="">Get on iphone</a>
-            <a href="">Get on Android</a>
+            <a class="downldBtn" href="">
+              <img src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/apple_icon_32ccc572ff/apple_icon_32ccc572ff.svg" alt="download-apple" width="18" height="22">
+              Get on iphone
+            </a>
+            <a class="downldBtn" href="">
+              <img src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/google_icon_9867fc9be6/google_icon_9867fc9be6.svg" alt="download-google" width="24" height="24">
+              Get on Android
+            </a>
           </div>
         </div>
 
         <div class="header__img col-md-6">
-          <!-- 2 svgs are missing -->
-          <img src="./Images/card1.png" alt="card1" style="width: 8rem" />
-          <img
-            src="./Images/headerImg.png"
-            alt="header image"
-            style="width: 8rem"
-          />
-          <img src="./Images/card2.png" alt="card2" style="width: 8rem" />
+          <img class="rect"  src="./Images/rect.png" alt="rect">
+          <img class="headerImg" src="./Images/headerImg.png" alt="header image"/>
+          <img class="card card1" src="./Images/card1.png" alt="card1"/>
+          <img class="card card2" src="./Images/card2.png" alt="card2"/>
+
+          <svg
+            class="circleHeaderIcon"
+            width="41"
+            height="41"
+            viewBox="0 0 46 46"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style="transform: translate(0px, 0px); opacity: 1"> 
+            <circle cx="23" cy="23" r="15.5" stroke="#E7439C" stroke-opacity="0.15" stroke-width="15"></circle>
+           </svg>
+          <svg class="dotHeaderIcon" width="33" height="108" viewBox="0 0 35 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px); opacity: 1;">
+            <circle cx="5" cy="5" r="5" fill="#2295F2" fill-opacity="0.28"></circle>
+            <circle cx="5" cy="30" r="5" fill="#2295F2" fill-opacity="0.28"></circle>
+            <circle cx="5" cy="55" r="5" fill="#2295F2" fill-opacity="0.28"></circle>
+            <circle cx="5" cy="80" r="5" fill="#2295F2" fill-opacity="0.28"></circle>
+            <circle cx="5" cy="105" r="5" fill="#2295F2" fill-opacity="0.28"></circle>
+            <circle cx="30" cy="5" r="5" fill="#2295F2" fill-opacity="0.28"></circle>
+            <circle cx="30" cy="30" r="5" fill="#2295F2" fill-opacity="0.28"></circle>
+            <circle cx="30" cy="55" r="5" fill="#2295F2" fill-opacity="0.28"></circle>
+            <circle cx="30" cy="80" r="5" fill="#2295F2" fill-opacity="0.28"></circle>
+            <circle cx="30" cy="105" r="5" fill="#2295F2" fill-opacity="0.28"></circle>
+          </svg>
+          <svg class="crossHeaderIcon" width="75" height="75" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px); opacity: 1;">
+            <g opacity="0.2">
+              <path d="M34.5601 36.8001H8.64014V28.4001H26.2401V10.5601H34.5601V36.8001Z" fill="#7913E5"></path>
+              <path d="M72.1602 36.8001H46.2402V10.5601H54.5602V28.4001H72.1602V36.8001Z" fill="#7913E5"></path>
+              <path d="M35.6798 69.6001H27.3598V51.7601H9.75977V43.3601H35.6798V69.6001Z" fill="#7913E5"></path>
+              <path d="M54.5602 69.6001H46.2402V43.3601H72.1602V51.7601H54.5602V69.6001Z" fill="#7913E5"></path>
+            </g>
+          </svg>
         </div>
       </div>
     </section>

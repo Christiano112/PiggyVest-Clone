@@ -17,3 +17,15 @@ function testimonialScroll() {
     }
 }
 
+//navigation bar scroll function
+
+window.onscroll = () => {scrollNavbar()};
+
+scrollNavbar = () => {
+    const navBar = document.getElementById("navBar");
+    if (document.documentElement.scrollTop > 50) {
+        navBar.classList.add("scroll");
+    } else {
+        navBar.classList.remove("scroll");
+    }
+}
