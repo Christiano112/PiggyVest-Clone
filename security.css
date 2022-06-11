@@ -1,0 +1,252 @@
+.security {
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 850px;
+  gap: 2rem;
+}
+
+.security a {
+  color: #0d60d8;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: border-bottom 1s;
+  display: block;
+  width: fit-content;
+}
+
+.learn-after {
+  background-color: rgba(13, 96, 216, 0.5);
+  height: 7px;
+  display: block;
+  position: absolute;
+  top: 65%;
+  width: 0%;
+  transition: width 0.5s;
+  z-index: -1;
+}
+
+.learn:hover .learn-after {
+  width: 100%;
+}
+
+.security__icon {
+  margin-bottom: 2rem;
+  width: 10rem;
+}
+
+.security__text {
+  text-align: left;
+}
+
+.security__text h1 {
+  animation: securityText 1s;
+  overflow: hidden;
+  z-index: -1;
+  transform: translateY(0);
+  transition: transform 2s;
+  transition-delay: 2s;
+}
+
+.savings {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+}
+
+.savings__header p {
+  margin: 18px 0 57px;
+}
+
+.savings__header a {
+  padding: 15px 20px;
+  border-radius: 12px;
+  text-align: center;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #0c1825;
+  text-decoration: none;
+  transition: background-color 2s ease;
+}
+
+.savings__header a:hover {
+  background-color: #0d60d8;
+}
+
+.savings__type {
+  background-color: #f9f9f9;
+  max-width: 350px;
+  border-radius: 20px;
+  position: relative;
+  padding: 30px 10px 30px 30px;
+  margin: 0 15px 45px 25px;
+  cursor: pointer;
+  animation: savingsType 3s ease-in-out;
+}
+
+.savings__type h5 {
+  margin: 25px 0 0;
+}
+
+.savings__type .text {
+  margin: 18px 0 40px;
+}
+
+.savings__type:nth-of-type(4) {
+  grid-column: 2 / 3;
+}
+
+.savings__type img {
+  height: 50px;
+  width: 50px;
+}
+
+.savings__type span {
+  display: block;
+  margin-bottom: 0;
+  transform: translateX(0);
+  transition: transform 0.5s;
+}
+
+.savings__type:hover .transform {
+  transform: translateX(10px);
+}
+
+.savings__type span p {
+  display: inline;
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .savings {
+    grid-gap: 0.3rem;
+  }
+
+  .savings__type:nth-of-type(4) {
+    grid-column: 1 / 2;
+    transform: translateX(50%);
+  }
+
+  .savings__type:nth-of-type(5) {
+    grid-column: 3 / 4;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 995px) {
+  .security {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .security p {
+    width: 90%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  .security__text {
+    text-align: center;
+  }
+
+  .security a {
+    margin: 0 auto;
+  }
+
+  .learn:hover .learn-after {
+    width: 0%;
+  }
+
+  .savings__header {
+    grid-column: 1 / 4;
+    justify-self: center;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    width: 300px;
+  }
+
+  .savings__type {
+    width: 250px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .savings__type:hover .transform {
+    transform: translateX(0);
+  }
+
+  .savings__type:nth-of-type(2) {
+    grid-column: 1 / 2;
+    transform: translateX(20%);
+  }
+
+  .savings__type:nth-of-type(3) {
+    grid-column: 3 / 4;
+    transform: translateX(-20%);
+  }
+
+  .savings__type:nth-of-type(4) {
+    grid-column: 1 / 2;
+    transform: translateX(20%);
+  }
+
+  .savings__type:nth-of-type(5) {
+    grid-column: 3/ 4;
+    transform: translateX(-20%);
+  }
+}
+
+@media (max-width: 767px) {
+  .savings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .savings__type {
+    transform: translateX(0);
+    width: auto;
+    max-width: 350px;
+    text-align: center;
+  }
+
+  .savings__type:nth-of-type(2),
+  .savings__type:nth-of-type(3),
+  .savings__type:nth-of-type(4),
+  .savings__type:nth-of-type(5) {
+    transform: translateX(0);
+  }
+}
+
+@keyframes securityText {
+  0% {
+    display: none;
+    transform: translateY(20%);
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    transform: translateY(0);
+  }
+}
+
+@keyframes savingsType {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+}
