@@ -180,6 +180,17 @@ section.header h1{
     margin-right: 10px;
 }
 
+@media (max-width: 476px) {
+    .ddbtn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .downldBtn {
+        padding: 14.5px 5px;
+    }
+}
+
 .downldBtn:hover{
     transition: .8s;
     color: #0c1825;
