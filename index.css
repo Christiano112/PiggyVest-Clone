@@ -136,7 +136,10 @@ section.header{
         margin: auto;
     }
     .header__img{
-        margin-left: -100px;
+        margin-left: -50px;
+    }
+    .rect, .headerImg{
+        max-width: 350px;
     }
 }
 
