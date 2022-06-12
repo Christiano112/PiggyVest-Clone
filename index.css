@@ -20,6 +20,7 @@ header, .header{
     position: fixed;
     top: 0;
     width: 100%;
+    min-width: 100%;
     min-height: 90px;
     background-color: hsla(0, 0%, 100%, 0);
     padding: 10px 10px;
@@ -210,14 +211,14 @@ section.header h1{
 }
 
 .rect{
-    width: 362px;
+    width: 350px;
     height: 572px;
     position: relative;
     left: 20%;
 }
 
 .headerImg{
-    width: 362px;
+    width: 350px;
     height: 500px;
     position: absolute;
     left: 14%;
@@ -254,3 +255,8 @@ section.header h1{
     left: 11.2%;
 }
 
+.crossHeaderIcon {
+    position: absolute;
+    top: 2%;
+    left: 8%;
+}
