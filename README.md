@@ -11,7 +11,7 @@
  Cowrywise
  Side Hustle
 
-### Requirements
+* Requirements
  Mobile responsiveness
  Form validation
  80% compliance to design
